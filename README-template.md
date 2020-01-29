@@ -19,7 +19,11 @@
 
 #### How to initialize/run your server app (where applicable)
 
-npm start
+node server.js
+node instructor.js
+node student.js
+
+npm run
   
 #### Tests
 
@@ -27,4 +31,4 @@ npm test
 
 #### UML
 
-![](./assets/lab18.jpg)
+![](./assets/lab18.svg)
