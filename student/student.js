@@ -12,11 +12,14 @@ studentChannel.on('grade', payload => {
 
 
 const assignment = (num) => `Lab ${num}`;
-
+/**
+ *  @function
+ *  Get to submittin' kid!
+ */
 const submit = () => {    
-    let lab = assignment(Math.floor(Math.random() * 100));
-    studentChannel.emit('submit', lab);
-  };
+  let lab = assignment(Math.floor(Math.random() * 100));
+  studentChannel.emit('submit', lab);
+};
 
 
 

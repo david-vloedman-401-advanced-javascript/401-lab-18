@@ -12,12 +12,15 @@ schoolChannel.on('submit', payload => {
 });
 
 const grade = num => `Grade: ${num}`;
-
+/**
+ * Get on it teach!
+ * @param {*} payload 
+ */
 const gradeAssignment = payload => {
-    const graded = {
-      assignment: payload,
-      grade: grade(Math.floor(Math.random() * 10)),
-    }
+  const graded = {
+    assignment: payload,
+    grade: grade(Math.floor(Math.random() * 10)),
+  };
 
-    schoolChannel.emit('grade', graded);
-  }
+  schoolChannel.emit('grade', graded);
+};

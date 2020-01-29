@@ -18,8 +18,7 @@ school.on('connection', socket =>{
     socket.join(room);
   });
 
-  socket.on('submit', payload => {
-    console.log(payload);
+  socket.on('submit', payload => {    
     school.to('instructor').emit('submit', payload);    
   });
 
